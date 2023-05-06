@@ -10,8 +10,8 @@ else
     local INSTALLED = false
     print("Would you like to install BCOS? (Y/N)")
     while true do
-        local install = io.read()
-        if install == "Y" then
+        local INSTALL = io.read()
+        if INSTALL == "Y" then
             print("Installing BCOS")
             shell.execute("clear")
             shell.execute("pastebin","run","FiThEB2N")
