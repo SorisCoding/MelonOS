@@ -3,7 +3,7 @@ local SETUP = true
 local INSTALLED = false
 print("//MelonOS Systems Check//")
 if fs.exists("/MelonOS") then
-    print("OS detected")
+    print("MelonOS detected")
     local INSTALLED = true
 else
     printError("MelonOS not installed, installation required")
@@ -17,7 +17,7 @@ else
             shell.execute("pastebin","run","FiThEB2N")
             break
         elseif install == "N" then
-            print("Exiting BCOS Systems Check")
+            print("Exiting MelonOS Systems Check")
             break
         else
             print("Y or N")
