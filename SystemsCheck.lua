@@ -16,7 +16,7 @@ else
             shell.execute("clear")
             shell.execute("pastebin","run","FiThEB2N")
             break
-        elseif install == "N" then
+        elseif INSTALL == "N" then
             print("Exiting MelonOS Systems Check")
             break
         else
