@@ -25,7 +25,7 @@ local function gitdown(owner,repo,branch,file,path)
 	if vaild then
 		local got = http.get("https://raw.gitusercontent.com/" .. owner .. "/" .. repo .. "/" .. branch .. "/" .. file)
 		local fileW = fs.open(path, "w")
-		fileW.write(got)
+		fileW.write(got.readAll())
 		fileW.close()
 		local res = true
 	else
@@ -40,7 +40,7 @@ local function melondown(file,path)
 	if valid then
 		local got http.get("https://raw.gitusercontent.com/SorisCoding/MelonOS/MelonOS/" .. file)
 		local fileW = fs.open(path, "w")
-		fileW.write(got)
+		fileW.write(got.readAll())
 		fileW.close()
 		local res = true
 	else
