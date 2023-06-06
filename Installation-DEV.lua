@@ -8,4 +8,14 @@ if not fs.exists("/MelonOS/functions/GitGet.lua") then
 	if fs.exists("/MelonOS/function/GitGet.lua") then
 		print("GitGet Downloaded")
 	end
+	local check = http.get("https://raw.githubusercontent.com/SorisCoding/MelonOS/MelonOS/MelonOS_Files/GitGet-DEV.lua")
+	local gitgetfile = fs.open("/MelonOS/function/GitGet.lua", "r")
+	if not (gitgetfile.readAll() = check.readAll()) then
+		print("GitGet  A Update")
 end
+
+if not (gitgetfile.readAll() = check.readAll()) then
+		print("GitGet  A Update")
+
+if not fs.exists("/MelonOS/functions/OSUI.lua") then
+	print("Downloading OSUI")
