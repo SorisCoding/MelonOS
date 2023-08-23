@@ -1,3 +1,10 @@
+print("  __  __      _              ___  ____  
+ |  \/  | ___| | ___  _ __  / _ \/ ___| 
+ | |\/| |/ _ \ |/ _ \| '_ \| | | \___ \ 
+ | |  | |  __/ | (_) | | | | |_| |___) |
+ |_|  |_|\___|_|\___/|_| |_|\___/|____/ 
+                                        ")
+
 print("Installation script in development")
 if not fs.exists("/MelonOS/functions/GitGet.lua") then
 	print("Downloading GitGet")
