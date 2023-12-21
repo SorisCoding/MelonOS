@@ -25,7 +25,7 @@ if not fs.exists("/MelonOS/functions/GitGet.lua") then
 	local gitgetfile = fs.open("/MelonOS/function/GitGet.lua", "r")
 	
 	if not (gitgetfile.readAll() = check.readAll()) then
-		print("GitGet Might Need An Update")
+		print("Might need to update: GitGet")
 	end
 else
 	print("Found: GitGet")
@@ -34,7 +34,7 @@ end
 
 print("Checking for updates: GitGet")
 if not (gitgetfile.readAll() = check.readAll()) and GitGetExists then
-	print("GitGet Might Need An Update A Update")
+	print("Might need to update: GitGet")
 	print("Update script not made for: GitGet")
 end
 
